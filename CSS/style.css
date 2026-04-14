@@ -88,6 +88,7 @@ header {
     left: 0;
     right: 0;
     box-shadow: 5px 8px 8px #d1d1d13b;
+    z-index: 99;
 }
 header .top-header .container {
     display: flex;
@@ -279,4 +280,54 @@ header .bottom-header .nav-links li.active a {
     width: 34px;
     height: 8px;
     border-radius: 30px;
+}
+
+/*------------------Banners-4------------------*/
+.banners-4 {
+    margin: 40px 0;
+}
+.banners-4 .container {
+    display: flex;
+    justify-content: space-between;
+}
+.banners-4 .container .box{
+    width: 24%;
+    background: url(../Media/Images/bgb3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 10px;
+    position: relative;
+}
+.banners-4 .container .box img{
+    width: 100px;
+    transition: 0.3s;
+}
+.banners-4 .container .box:hover img{
+    scale: 1.05;
+}
+.banners-4 .container .box .text h5 {
+    font-size: 16px;
+}
+.banners-4 .container .box .text .sale {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 7px 0;
+}
+.banners-4 .container .box .text .sale span {
+    font-size: 25px;
+    font-weight: bold;
+}
+.banners-4 .container .box .text h6 {
+    font-size: 14px;
+    font-weight: bold;
+}
+.banners-4 .container .box .link-btn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
