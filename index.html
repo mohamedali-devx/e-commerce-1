@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mony | Online Store</title>
+    <link rel="icon" href="Media/Images/icon.png">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css files -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="container">
+                <a href="#" class="logo"><img src="Media/Images/Logo-removebg-preview.png" alt="Logo Image"></a>
+                
+                <form action="" class="search-box">
+                    <div class="select-box">
+                        <select name="category" id="category">
+                            <option value="All Categories" selected>All Categories</option>
+                            <option value="Electronics & Digita">Electronics & Digita</option>
+                            <option value="Phones & Tablets">Phones & Tablets</option>
+                            <option value="Fashion & Clothing">Fashion & Clothing</option>
+                            <option value="Telivation & Monitor">Telivation & Monitor</option>
+                            <option value="Jewelry & Wateches">Jewelry & Wateches</option>
+                            <option value="Washing Machine">Washing Machine</option>
+                            <option value="Toys & Hobbies">Toys & Hobbies</option>
+                        </select>
+                    </div>
+                    <input type="text" name="search" id="search" placeholder="Search For Products" required>
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+
+                <div class="header-icons">
+                    <div class="icon">
+                        <a href="#">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="count count-fav">0</span>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="count count-item-header">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-header">
+            <div class="container">
+                <nav>
+                    <div class="category-nav">
+                        <div class="category-btn">
+                            <i class="fa-solid fa-bars"></i>
+                            <p>Browse Category</p>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                        <div class="category-nav-list">
+                            <a href="#">Top 10 Offers</a>
+                            <a href="#">Electronics & Digita</a>
+                            <a href="#">Phones & Tablet</a>
+                            <a href="#">Fashion & Clothings</a>
+                            <a href="#">Telivsion & Monitor</a>
+                            <a href="#">Jewelry & Watches</a>
+                            <a href="#">Toys & Hobbies</a>
+                        </div>
+                    </div>
+
+                    <ul class="nav-links">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Accesories</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="login-signup btns"> 
+                    <a href="#" class="btn">Login <i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="#" class="btn">Sign Up <i class="fa-solid fa-user-plus"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="slider">
+        <div class="container">
+            <!-- Swiper -->
+            <div class="slide-swp swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><img src="Media/Images/bhome1.png" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="Media/Images/bhome2.png" alt=""></a></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            
+            <div class="banner-2">
+                <a href="#"><img src="Media/Images/bhome3.png" alt=""></a>
+            </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    
+    <!-- JS Main File -->
+    <script src="JS/main.js"></script>
+</body>
+</html>
