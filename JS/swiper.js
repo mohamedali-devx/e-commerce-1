@@ -24,3 +24,42 @@ var swiper = new Swiper(".slide-product", {
     },
     loop: true,
 });
+var swiper = new Swiper(".slide-electronics", {
+    slidesPerView: 5,
+    spaceBetween: 20,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+});
+var swiper = new Swiper(".slide-appliances", {
+    slidesPerView: 5,
+    spaceBetween: 20,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+});
+var swiper = new Swiper(".slide-mobiles", {
+    slidesPerView: 5,
+    spaceBetween: 20,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+});
