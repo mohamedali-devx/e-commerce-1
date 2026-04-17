@@ -4,21 +4,3 @@ function open_cat_list() {
 }
 let category_btn = document.querySelector(".category-btn");
 category_btn.addEventListener("click", open_cat_list);
-
-
-
-
-
-// Initialize Swiper
-var swiper = new Swiper(".slide-swp", {
-    pagination: {
-    el: ".swiper-pagination",
-    dynamicBullets: true,
-    clickable: true,
-    },
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-    loop: true,
-});
