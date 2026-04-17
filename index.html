@@ -16,6 +16,29 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
+
+    <div class="cart">
+        <div class="top-cart">
+            <h3>Cart Items : <span class="count-item-cart">0</span></h3>
+            <span onclick="open_close_cart()" class="close-cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+
+        <div class="items-in-cart" id="cart-items">
+        </div>
+
+        <div class="bottom-cart">
+            <div class="total">
+                <p>subtotal</p>
+                <p class="price-cart-total">$0</p>
+            </div>
+            
+            <div class="button-cart">
+                <a href="#">Checkout</a>
+                <span onclick="open_close_cart()" class="btn-cart trans-bg">Shop More</span>
+            </div>
+        </div>
+    </div>
+
     <header>
         <div class="top-header">
             <div class="container">
@@ -47,7 +70,7 @@
                             <span class="count count-fav">0</span>
                         </a>
                     </div>
-                    <div class="icon">
+                    <div onclick="open_close_cart()" class="icon">
                         <a href="#">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <span class="count count-item-header">0</span>
@@ -304,7 +327,7 @@
 
         <div class="bottom_footer">
             <div class="container">
-                <p>&copy; <span>Reda Store.</span> All Rights Reserved.</p>
+                <p>&copy; <span>Mony Store.</span> All Rights Reserved.</p>
 
                 <div class="payment_img">
                     <img src="Media/Images/payment_method.png" alt="">
@@ -317,8 +340,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     
     <!-- JS Main File -->
-    <script src="JS/main.js"></script>
     <script src="JS/swiper.js"></script>
     <script src="JS/items-home.js"></script>
+    <script src="JS/main.js"></script>
 </body>
 </html>

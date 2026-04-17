@@ -28,7 +28,7 @@ fetch("products.json")
                             <p class="old-price">$${product.old_price}</p>
                         </div>
                         <div class="icons">
-                            <span class="btn-add-cart">
+                            <span class="btn-add-cart" data-id="${product.id}">
                                 <i class="fa-solid fa-cart-shopping"></i> add to cart
                             </span>
                             <span class="icon-product"><i class="fa-regular fa-heart"></i></span>
@@ -54,7 +54,7 @@ fetch("products.json")
                             <p><span>$${product.price}</span></p>
                         </div>
                         <div class="icons">
-                            <span class="btn-add-cart">
+                            <span class="btn-add-cart" data-id="${product.id}">
                                 <i class="fa-solid fa-cart-shopping"></i> add to cart
                             </span>
                             <span class="icon-product"><i class="fa-regular fa-heart"></i></span>
