@@ -64,6 +64,21 @@ function updateCart() {
 
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
 
+    const checoutItems = document.getElementById("checkout-items");
+
+    let items_input = document.getElementById("the_items") || "";
+    let total_price_input = document.getElementById("total_price") || "";
+    let count_items = document.getElementById("count_items") || "";
+    
+    if (checoutItems) {
+        checoutItems.innerHTML = "";
+
+
+        items_input.value = "";
+        total_price_input.value = "";
+        count_items.value = "";
+    }
+
     var total_Price = 0;
     var total_count = 0;
 
@@ -76,6 +91,11 @@ function updateCart() {
         total_Price += total_Price_item;
         total_count += item.quantity;
 
+        // Checkout Input
+        items_input.value += item.name + "---" + "price: " + total_Price_item + "---" + "count: " + item.quantity + "\n";
+        total_price_input.value = total_Price + 20;
+        count_items.value = total_count;
+        
         cartItemsContainer.innerHTML += `
         
             <div class="item-cart">
@@ -95,6 +115,28 @@ function updateCart() {
                 </button>
             </div>
         `;
+
+        if (checoutItems) {
+            checoutItems.innerHTML += `
+                        <div class="item_cart">
+                            <div class="image_name">
+                                <img src="${item.img}" alt="">
+                                <div class="content">
+                                    <h4>${item.name}</h4>
+                                    <p class="price_cart">$${total_Price_item}</p>
+                                    <div class="quantity_control">
+                                        <button class="dec" data-index="${index}">-</button>
+                                        <span class="quantity">${item.quantity}</span>
+                                        <button class="inc" data-index="${index}">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="delete-item" data-index="${index}">
+                                <i style="font-size: 25px;" class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+            `
+        }
     });
 
 
@@ -109,6 +151,14 @@ function updateCart() {
 
     const increaseButtons = document.querySelectorAll(".inc");
     const decreaseButtons = document.querySelectorAll(".dec");
+
+    if (checoutItems) {
+        const subtotal_checkout = document.querySelector(".subtotal_checkout");
+        const total_checkout = document.querySelector(".total_checkout");
+
+        subtotal_checkout.innerHTML = `$${total_Price}`;
+        total_checkout.innerHTML = `$${total_Price + 20}`;
+    }
 
     increaseButtons.forEach(button => {
         button.addEventListener("click" , (event) =>{
